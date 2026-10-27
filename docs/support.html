@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#070b18">
+<meta name="description" content="Help and troubleshooting for IFC Asset Capture on iPhone, iPad and Mac.">
+<title>Support | IFC Asset Capture</title>
+<link rel="icon" type="image/png" href="assets/app-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<div class="wrap">
+<nav aria-label="Main navigation"><a class="brand" href="index.html"><img src="assets/app-icon.png" width="44" height="44" alt=""><span>IFC Asset Capture</span></a><div class="links"><a href="index.html">Overview</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a></div></nav>
+<main id="content">
+<header class="hero"><div class="eyebrow">Support · IFC Asset Capture</div><h1>How can we help?</h1><p class="lead">Import IFC models, capture asset information, use QR labels and export reviewed evidence. Find quick guidance and contact details below.</p></header>
+<section class="grid" aria-label="Support content">
+<article class="card"><h2>Getting started</h2><ol><li>Open <strong>IFC Asset Capture</strong> and choose <strong>Import IFC Model</strong>, or explicitly open the labelled demonstration project.</li><li>Select a supported <code>.ifc</code> file from Files (iPhone/iPad) or the macOS file picker.</li><li>Use <strong>Assets</strong> to search IFC GlobalIds, inspect original property sets and review maintainable asset candidates.</li><li>Capture missing field information and photographs. Changes begin as drafts or pending evidence.</li><li>Use <strong>Review</strong> to approve fields and photographs independently.</li><li>Open <strong>Packages</strong> to export a reviewed ZIP including approved metadata and images.</li></ol></article>
+<article class="card"><h2>Supported platforms and files</h2><p>iPhone and iPad with iOS/iPadOS 18 or later; native macOS 15 or later. The current release supports IFC2X3 and IFC4 <code>.ifc</code> STEP files.</p><p><strong>Import limit:</strong> 50,000,000 bytes (approximately 50 MB) per IFC file. Unsupported IFC schemas and malformed files may be rejected.</p><p>The app reads IFC data and does <strong>not</strong> modify the original IFC source file. It is not a 3D geometry viewer or an automatic COBie writer.</p></article>
+<article class="card"><h2>QR labels</h2><p>Create individual PNG labels or A4 sheets from the selected IFC collection. Print at <strong>100% / Actual Size</strong>, without Fit to Page, for reliable scanning.</p><p>The QR identifies a record in a specific model and source revision. Scan with the app’s camera tool, or enter the payload manually if a camera is unavailable. A match does not prove that the real-world installation is the correct product.</p></article>
+<article class="card"><h2>Photographs and offline use</h2><p>Use the device camera, Photos picker or file import where supported. Add notes and link evidence to an asset or field. Approved photographs appear in reviewed packages; pending ones are excluded.</p><p>For offline use, download the IFC and any images to local storage before disconnecting. Save the export to a local Files location; a cloud location may need connectivity.</p></article>
+<article class="card wide details"><h2>Frequently asked questions</h2>
+<details><summary>Why does my IFC not import?</summary><p>Check the <code>.ifc</code> extension, supported IFC2X3/IFC4 schema, completed local download and 50,000,000-byte limit. Try another valid export if the file is malformed.</p></details>
+<details><summary>Why does an asset show “Source placeholder” or “Source needs review”?</summary><p>Values such as <code>n/a</code> and certain 1900-era placeholder dates are retained for provenance but do not automatically count as useful completed values. Inspect the original IFC property and enter the real field information where known.</p></details>
+<details><summary>My QR code is rejected—what should I do?</summary><p>Open the IFC collection used to create the label. The QR includes a model-qualified identity and file digest. A label from another model, changed file or unknown component is deliberately rejected.</p></details>
+<details><summary>Why are some photos missing from the ZIP?</summary><p>Only approved evidence is included. Open Review and approve the intended photograph independently. Check package counts before export.</p></details>
+<details><summary>Will the export update my IFC or COBie model?</summary><p>No. Asset Capture exports reviewed values and evidence for a receiving team. The Receiving view can compare a package with a reference IFC and flag conflicts; it does not edit the reference model.</p></details>
+<details><summary>How can I remove local data?</summary><p>Open the collection management controls, review the confirmation and delete the selected collection. This removes the app-managed project data and associated evidence for that collection; it does not delete the original IFC selected from Files or exports saved elsewhere.</p></details>
+<details><summary>What does “Capture guidance” do?</summary><p>It provides built-in offline instructions. It is not connected generative AI and does not send questions to an external model.</p></details>
+</article>
+<article class="card wide"><h2>Contact support</h2><p>For bugs, questions or feature suggestions, contact <a href="mailto:jamiepward@googlemail.com?subject=IFC%20Asset%20Capture%20Support">jamiepward@googlemail.com</a>, the support address used for our other IFC utilities.</p><div class="actionbar"><a class="btn primary" href="mailto:jamiepward@googlemail.com?subject=IFC%20Asset%20Capture%20Support">Email support</a><a class="btn" href="https://github.com/JWardy07/IFCAssetCapture/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a></div><div class="notice"><strong>Include:</strong> app version/build, device and OS, IFC schema, approximate file size, error message, and steps to reproduce. <strong>Do not attach confidential IFC models, real project data or personal photographs to public GitHub issues.</strong> Share sensitive files privately only after agreeing a safe method.</div></article>
+</section>
+</main>
+<footer><strong>IFC Asset Capture</strong> · © 2026 Jamie Ward. Independent IFC/BIM utility; not affiliated with buildingSMART International.<div class="footlinks"><a href="support.html">Support</a><a href="privacy.html">Privacy policy</a><a href="index.html">Overview</a></div></footer>
+</div>
+</body>
+</html>
